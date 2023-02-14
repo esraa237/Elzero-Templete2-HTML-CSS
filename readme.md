@@ -1,6 +1,6 @@
 > # This Templete from Elzero web school (the third templete of Html&Css)
 
->## What I learned from this templetes :
+>## What I learned or Rememberd from this templetes :
 
 >### HTML Notes :
 >- when we need to go to any section or page home we put the content in ```<a>```
@@ -41,3 +41,19 @@
 > }
 >}
 >~~~
+>>#### Features Div
+>- image effect with before and after(Technique after)
+>- fill (more word) when hover with linear-gradient:
+>~~~
+>.features .container .quality a{
+> background-position:right bottom;
+> background-size:200% 100%;
+> background-image:linear-gradient(to right, rgb(245, 63, 54) 50%, white 50%) ;
+>}
+>.features .container .quality:hover a{
+>  background-position:left bottom;
+>  }
+>~~~
+>>#### Team Member Div
+>- to make color shift -for example to gray- to an element we use ```filter:grayscale(100%);```
+>- effect box when hover
