@@ -892,6 +892,56 @@ a{
   color: var(--main-color);
 }
 /* End services */
+/* Start skills */
+.our-skills{
+  padding-top: var(--main-section-padding);
+  padding-bottom: var(--main-section-padding);
+  position:relative;
+}
+.our-skills .container{
+  display: flex;
+  align-items: center;
+}
+@media(max-width:991px){
+.our-skills .container img{
+  display: none;
+}
+}
+.our-skills .skills{
+  flex:1;
+}
+.our-skills .skill{
+  
+}
+.our-skills .skill h3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-skills .skill h3 span{
+  font-size: 12px;
+  color: var(--main-color);
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.our-skills  .the-progress{
+  height:30px;
+  position: relative;
+  background-color: #eee;
+}
+.our-skills .the-progress span{
+  height:100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top:0;
+  left:0;
+}
+/* End skills */
 /* Start animation */
 @keyframes up-to-down{
   0%,100%{
