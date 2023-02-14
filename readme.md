@@ -57,3 +57,5 @@
 >>#### Team Member Div
 >- to make color shift -for example to gray- to an element we use ```filter:grayscale(100%);```
 >- effect box when hover
+>>#### OurSkills Div
+>- put width of the progress span inline in html to make it easy to accses with js later

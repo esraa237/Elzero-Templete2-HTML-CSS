@@ -910,9 +910,6 @@ a{
 .our-skills .skills{
   flex:1;
 }
-.our-skills .skill{
-  
-}
 .our-skills .skill h3{
   display: flex;
   justify-content: space-between;
@@ -942,6 +939,91 @@ a{
   left:0;
 }
 /* End skills */
+/* Start work */
+.how-it-work{
+  padding-top:var(--main-section-padding);
+  padding-bottom:var(--main-section-padding);
+  position: relative;
+  background-color: var(--section-color);
+}
+.how-it-work .container{
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  gap:100px;
+}
+@media(max-width:991px){
+  .how-it-work .container{
+    flex-direction: column;
+    gap:50px;
+  }
+}
+.how-it-work .container> img{
+  max-width: 100%;
+}
+.how-it-work .content .box{
+  background-color: #f6f5f5;
+  margin-bottom: 20px;
+  padding: 30px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+@media(max-width:991px){
+  .how-it-work .content .box{
+    flex-direction: column;
+  }
+}
+.how-it-work .content .box::before{
+  content: "";
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  background-color: #ededed;
+  height:0px;
+  width:0px;
+  z-index: -1;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.how-it-work .content .box:hover::before{
+  height:100%;
+  width:100%;
+}
+.how-it-work  .box img{
+  width:64px;
+}
+.how-it-work .box .text{
+  margin: 0;
+}
+@media(max-width:991px){
+  .how-it-work .box .text{
+    text-align: center;
+  }
+}
+.how-it-work .box .text h3{
+  margin: 0;
+  font-size: 22px;
+}
+.how-it-work .box .text p{
+  font-size: 18px;
+  color: #777;
+  line-height: 1.7;
+  margin: 10px 0 0;
+}
+/* End work */
 /* Start animation */
 @keyframes up-to-down{
   0%,100%{
