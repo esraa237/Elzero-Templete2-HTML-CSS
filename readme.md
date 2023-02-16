@@ -59,3 +59,4 @@
 >- effect box when hover
 >>#### OurSkills Div
 >- put width of the progress span inline in html to make it easy to accses with js later
+>>####  Div

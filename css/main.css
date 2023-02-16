@@ -494,7 +494,7 @@ a{
 }
 .features .container{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(2,minmax(300px,1fr));
   gap:40px;
 }
 .features .container .box{
@@ -656,10 +656,10 @@ a{
   top:-50px;
   right:-10px;
   border: 10px solid var(--section-color);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 .testimonials .box h3{
   margin:0 auto 10px;
@@ -1180,15 +1180,160 @@ a{
     -ms-border-radius: 0;
     -o-border-radius: 0;
 }
-
 }
 .events .subscribe input[type=submit]:hover{
   background-color: var(--main-color-alt);
 }
-
-
-
 /* End events */
+/* Start pricing */
+.pricing{
+  padding-top: var(--main-section-padding);
+  padding-bottom: var(--main-section-padding);
+  position:relative;
+  background-color: var(--section-color);
+}
+.pricing .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  gap:30px;
+}
+.pricing .box{
+  background-color: white;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.130),0 2px 4px 0 rgba(0, 0, 0, 0.120);
+  padding:30px 20px 20px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+.pricing .box::before,
+.pricing .box::after{
+  content:"";
+  position: absolute;
+  height:50%;
+  width:0;
+  z-index: -1;
+  background-color: #f6f6f6;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.pricing .box::before{
+  left:0;
+  top:0;
+}
+.pricing .box::after{
+  right:0;
+  bottom:0;
+}
+.pricing .box:hover::before,
+.pricing .box:hover::after{
+  width:100%;
+}
+@media(min-width:1200px){
+.pricing .container .advance{
+  top:-20px;
+  }
+}
+.pricing .container .box .lable{
+  position: absolute;
+  right:-30px;
+  top:50px;
+  color: white;
+  background-color: var(--main-color);
+  padding:10px 30px 10px 10px;
+  font-size: 18px;
+  transform:rotate(90deg);
+  font-weight:bold ;
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+}
+.pricing .container .box .lable::after{
+  content:'';
+  position: absolute;
+  right:-1px;
+  top:0px;
+  height:0;
+  width:0;
+  border-style: solid ;
+  border-width: 20px;
+  border-color: transparent white transparent transparent;
+}
+.pricing .container .box .title{
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom:30px;
+  letter-spacing: -0.5px;
+}
+.pricing .container .box img{
+  width:80px;
+  margin-bottom: 30px;
+}
+.pricing .box .price span{
+  display: block;
+}
+.pricing .box .price span:first-child{
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 5px;
+}
+.pricing .box .price span:last-child{
+  color: #777;
+  margin-bottom: 20px;
+}
+.pricing .box ul .unit{
+  display: flex;
+  align-items: center;
+  padding:20px 0;
+  text-align: left;
+  position: relative;
+  margin-left: 0;
+}
+.pricing .box ul .unit::before{
+  content: "";
+  position: absolute;
+  left:-30px;
+  top:0;
+  width:calc(100% + 60px);
+  height:1px;
+  background: #eee;
+}
+.pricing .box ul .unit i{
+  color: var(--main-color);
+  font-size: 20px;
+  margin-right: 7px;
+  margin-left: 0;
+}
+.pricing .box a{
+  display: block;
+  width: fit-content;
+  font-weight: bold;
+  margin:30px auto 20px;
+  padding:15px 20px;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.pricing .box a:hover{
+  color: white;
+  background-color: var(--main-color);
+}
+/* End pricing */
+
 /* Start animation */
 @keyframes up-to-down{
   0%,100%{
@@ -1253,7 +1398,6 @@ a{
     -ms-border-radius: 0%;
     -o-border-radius: 0%;
 }
-
 }
 @keyframes arrow-long{
   100%{
