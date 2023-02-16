@@ -4,7 +4,8 @@
 
 >### HTML Notes :
 >- when we need to go to any section or page home we put the content in ```<a>```
->- 
+>>#### Video Div
+>- we use holder div inside container - that is used like container in other divs - to avoid the lack of space in mobile response 
 
 >### CSS Notes :
 >>#### Header Div
