@@ -520,7 +520,7 @@ a{
   bottom:0px;
   transition: var(--main-transition);
   border-style: solid;
-  border-width:0 0 170px 500px ;
+  border-width:0 0 170px 550px ;
   border-color: transparent transparent white transparent;
   -webkit-transition: var(--main-transition);
   -moz-transition: var(--main-transition);
@@ -528,7 +528,7 @@ a{
   -o-transition: var(--main-transition);
 }
 .features .container .box:hover .img-holding::after{
-  border-width:170px 500px 170px 0 ;
+  border-width:170px 550px 170px 0 ;
 }
 .features .container .img-holding img{
   max-width: 100%;
