@@ -60,4 +60,9 @@
 >- effect box when hover
 >>#### OurSkills Div
 >- put width of the progress span inline in html to make it easy to accses with js later
->>####  Div
+>>#### global sperator 
+>- to make the separator we add empty div in html and make the shape with css code:
+>~~~
+> background-image: linear-gradient(135deg, white 25%,transparent 25%), linear-gradient(225deg, white 25%,transparent 25%);
+>background-size: 30px 30px;
+>~~~
